@@ -110,11 +110,15 @@ name = "Dawan"
 is_student = True
 something = None
 
-my_profile = {"age":age,
-              "hight":hight,
-              "name":name,
-              "is student":is_student,
-              "somtheng":something}
-              
-for key, value in my_profile.items():
-    print(f"{key}:{value}")
+my_profile = {"age": age,
+              "hight": hight,
+              "name": name,
+              "is student": is_student,
+              "somtheng": something}
+
+for key, value in my_profile.items():  # loop
+    v_type = type(value).__name__  # the type of data
+    # the length of value - just for str
+    v_length = len(value) if isinstance(value, str) else "N/A"
+    # to get new lines
+    print(f"{key}:{value} | type: {v_type} | length: {v_length}")
