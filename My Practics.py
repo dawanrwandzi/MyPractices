@@ -1,5 +1,5 @@
 # This is Print Function
-
+'''
 a = 5
 b = 5
 total = a+b
@@ -95,3 +95,26 @@ number = 10
 print(name.upper())  # upper (capital) - just for str
 print(len(name))  # len - just for str
 print(number.bit_length())  # return the length of binary 01 - not for str
+'''
+
+# Challenge - crate 5 variable is whith diffrent data types
+# 1- your age
+# 2- your hight
+# 3- your name
+# 4- are you a student?
+# 5- somthing with no value yet
+
+age = 27
+hight = 181.4
+name = "Dawan"
+is_student = True
+something = None
+
+my_profile = {"age":age,
+              "hight":hight,
+              "name":name,
+              "is student":is_student,
+              "somtheng":something}
+              
+for key, value in my_profile.items():
+    print(f"{key}:{value}")
