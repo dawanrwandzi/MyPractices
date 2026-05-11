@@ -1,5 +1,5 @@
 # This is Print Function
-'''
+
 a = 5
 b = 5
 total = a+b
@@ -122,7 +122,7 @@ for key, value in my_profile.items():  # loop
     v_length = len(value) if isinstance(value, str) else "N/A"
     # to get new lines
     print(f"{key}:{value} | type: {v_type} | length: {v_length}")
-'''
+
 
 # string methods
 # 1- Types - (type(), str()) - bulit-in function
